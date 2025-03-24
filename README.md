@@ -52,17 +52,17 @@ This exercise involves several sequential problems. While a complete end-to-end 
 
 Candidates should consider the following steps and be prepared to discuss their approach:
 
-1.  **Data Acquisition:** How to effectively retrieve drug label data from DailyMed or similar sources.
+1.  ~~**Data Acquisition:** How to effectively retrieve drug label data from DailyMed or similar sources.~~
 2.  **Text Extraction:** How to isolate and extract the sections of text that describe drug indications.
 3.  **Indication Normalization:** How to standardize and clean the extracted indication text (e.g., handling synonyms, variations in phrasing).
 4.  **ICD-10 Mapping:** How to link the normalized indications to corresponding ICD-10 codes.
-5.  **Data Structuring:** How to organize the extracted and mapped data into a structured format for querying and use.
-6.  **Prototype Development:** How to create a working prototype that demonstrates the core functionality of the system.
+5.  ~~**Data Structuring:** How to organize the extracted and mapped data into a structured format for querying and use.~~
+6.  ~~**Prototype Development:** How to create a working prototype that demonstrates the core functionality of the system.~~
 
 ## Bonus Points
 
 * Well-documented and modular code.
-* A simple REST API that allows querying drug-indication mappings.
+~~* A simple REST API that allows querying drug-indication mappings.~~
 * Thoughts on scalability and production deployment considerations.
 * Consideration of integrating AI/ML to improve text classification accuracy.
 
@@ -74,6 +74,10 @@ Candidates should consider the following steps and be prepared to discuss their 
 ### Goal
 
 To develop a fast and accurate method to map drug indications from DailyMed datasets to ICD-10 codes, using FAISS for efficient fuzzy search. The end goal is to support natural language queries that return embedded drug indications and their mapped ICD-10 codes with a confidence interval.
+
+In the spirit of prototyping and domain exploration, let's address the core value proposition of creating a simple yet reliably performant lightweight set of embeddings for DailyMed that can be replicated and tuned further for deeper investigation and productionization.
+
+![methodology](./assets/method_tradeoffs.png)
 
 #### Libraries
 **Data Handling**: pandas, sqlite3
