@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 ipykernel = "==6.28.0"
 python-dotenv = "==1.0.0"
+nbdime = "*"
 
 [dev-packages]
 
