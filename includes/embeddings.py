@@ -1,9 +1,9 @@
 import torch
 from transformers import AutoTokenizer, AutoModel
 
-dimension = 768  # BioBERT embedding dimension
-
 class BioBERTEmbedder:
+
+    dimension = 768 # BioBERT embedding dimension
 
     def __init__(self, model_name="microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract"):
         """Initializes the BioBERTEmbedder with a pre-trained model and tokenizer."""
@@ -35,4 +35,4 @@ class BioBERTEmbedder:
 
         # Calculate mean of the hidden state
         embeddings = torch.mean(outputs.last_hidden_state, dim=1).cpu().numpy()
-        return embeddings
+        return embeddings.astype('float32')
