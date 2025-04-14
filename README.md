@@ -118,3 +118,7 @@ Display the results in a pandas DataFrame:
 
 2.	Continuous Learning:
 	- Implement feedback loops where human-validated mappings update the FAISS index and embedding models.
+
+## Disclaimer
+
+Note: This project is part of the [OneHealthCTO initiative](https://onehealthcto.com/) and is not affiliated with any employer or company. For educational purposes only — not medical advice.
